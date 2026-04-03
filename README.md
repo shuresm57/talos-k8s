@@ -2,11 +2,10 @@
 
 I built a private Kubernetes cluster on Hetzner Cloud. Just raw infrastructure without managed K8s and no public IPs on any of the nodes.
 
+
 ## The Build
 
 This is a production style cluster where none of the Kubernetes nodes are reachable from the internet. All outbound traffic is routed through a NAT VM and the only public entry point is a load balancer, sitting in front of the control plane.
-
-
 
 ```
 Internet → Load Balancer (public IP)
