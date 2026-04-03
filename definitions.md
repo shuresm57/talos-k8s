@@ -30,4 +30,6 @@ Automates what I was doing manually with `hcloud load-balancer create` so when a
 
 The HTTP router which sits in front of all your services and routes incoming requests to the right one based on the hostname.
 
+**Helm**
 
+Package manager for Kubernetes that lets you install and configure applications with a command instead of writing all the yaml yourself.
