@@ -25,6 +25,7 @@ The control plane has 4 core components:
 4. **kube-controller-manager**
 
    The controller manager looks at the desired state, from etcd, and then determines whether the actual state aligns or not and then closes the gap.
+   
 **Quorum**
 
 Why you need an odd number of control plane nodes, so etcd can always reach a majority vote. 3 is the minimum, you can lose 1 and still function.
