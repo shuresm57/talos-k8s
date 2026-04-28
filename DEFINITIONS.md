@@ -12,7 +12,7 @@ The control plane has 4 core components:
 
 1. **etcd**
 
-  A database that stores the entire state of your cluster so the control plane knows what everything looked like if it ever restarts.
+    A database that stores the entire state of your cluster so the control plane knows what everything looked like if it ever restarts.
 
 2. **kube-apiserver**
 
