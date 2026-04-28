@@ -25,7 +25,17 @@ The control plane has 4 core components:
 4. **kube-controller-manager**
 
    The controller manager looks at the desired state, from etcd, and then determines whether the actual state aligns or not and then closes the gap.
-   
+
+A worker node has 2 core components:
+
+1. **kubelet**
+
+    The agent running on every node. It receives PodSpecs from the control plane and ensures the described containers are running and healthy.
+    
+2. **kube-proxy**
+
+    The network proxy running on every node. It maintains routing rules that direct incoming traffic to the correct Pod, based on Services.
+    
 **Quorum**
 
 Why you need an odd number of control plane nodes, so etcd can always reach a majority vote. 3 is the minimum, you can lose 1 and still function.
